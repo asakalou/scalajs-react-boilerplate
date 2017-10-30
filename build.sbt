@@ -9,12 +9,9 @@ lazy val root = (project in file("."))
 scalaJSUseMainModuleInitializer := true
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.2",
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.0.0",
-  "com.github.japgolly.scalacss" %%% "core" % "0.5.3",
-  "com.github.japgolly.scalacss" %%% "ext-react" % "0.5.3"
+  "org.scala-js" %%% "scalajs-dom" % "0.9.3"
 )
 
-npmDependencies in Compile ++= Seq(
-    "react" -> "15.6.1",
-    "react-dom" -> "15.6.1")
+//npmDependencies in Compile ++= Seq(
+//    "react" -> "15.6.1",
+//    "react-dom" -> "15.6.1")
